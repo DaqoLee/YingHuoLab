@@ -1,0 +1,57 @@
+<!--pages/connect/connect.wxml-->
+<view class="flex_column">
+	<view class="line" style="margin-top:32rpx"></view>
+	<view class="flex_row cell">
+		<text class="cell_name">蓝牙</text>
+		<switch checked="{{!errMsg}}" disabled />
+	</view>
+	<view class="line"></view>
+<text class="tip" wx:if='{{errMsg}}'>!!!:{{errMsg}}</text>
+
+	<block wx:else>
+
+		<!-- <block wx:if='{{connectedDevices.length > 0}}'>
+			<view class="flex_row title_wrapper">
+				<text class="title">已连接的设备</text>
+			</view>
+			<view class="line"></view>
+			<block wx:for='{{connectedDevices}}' wx:key='item'>
+				<view class="flex_column device">
+					<text class="cell_name">{{item}}</text>
+					<view class="flex_row info">
+						<text>000000E-0000-0000-0000-00001</text>
+						<text>-90dBm</text>
+					</view>
+				</view>
+				<view class="line"></view>
+			</block>
+		</block> -->
+
+
+		<view class="flex_row title_wrapper">
+			<text class="title">其它设备 searching...</text>
+		</view>
+
+		<block wx:if='{{devices.length > 0}}'>
+			<view class="line"></view>
+			<block wx:for='{{devices}}' wx:key='item'>
+
+				<view class="flex_column device" hover-class="click" data-name="{{item.name || item.localName}}" bindtap="createBLEConnection" data-device-id="{{item.deviceId}}">
+					<block wx:if='{{item.name}}'>
+						<text class="cell_name">{{item.name}}</text>
+					</block>
+					<block wx:else>
+						<text class="cell_name">未知设备</text>
+					</block>
+					<view class="flex_row info">
+						<text>{{item.deviceId}}</text>
+						<text>{{item.RSSI}}dBm</text>
+					</view>
+				</view>
+
+
+				<view class="line"></view>
+			</block>
+		</block>
+	</block>
+</view>

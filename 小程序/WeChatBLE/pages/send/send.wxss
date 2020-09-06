@@ -1,0 +1,123 @@
+/* pages/send/send.wxss */
+
+page {
+  background-color: #F3F2F8;
+}
+
+.receive {
+  word-break: break-all;
+}
+
+.received_menu {
+  margin-bottom: 12rpx;
+  margin-left: 32rpx;
+}
+
+.received_text {
+  margin-top: 32rpx;
+  margin-bottom: 12rpx;
+  margin-left: 20rpx;
+  color: #8f8e94;
+  font-size: 22rpx;
+}
+
+.scroll {
+  height: 700rpx;
+  /* width: 95%;
+  margin: 0 auto;
+  padding-right: 10rpx;
+  padding-left: 10rpx; */
+  background-color: #fff;
+  border-top: 1rpx solid #dadadb;
+  border-bottom: 1rpx solid #dadadb;
+}
+
+.clear {
+  margin-left: 64rpx;
+  color: red;
+  font-size: 22rpx;
+  align-self: center;
+}
+
+.text_input {
+  background-color: #fff;
+  border-top: 1rpx solid #dadadb;
+  border-right: 1rpx solid #dadadb;
+  border-bottom: 1rpx solid #dadadb;
+  height: 180rpx;
+  flex-grow: 1;
+  padding: 10rpx;
+
+}
+
+.send_area {
+  height: 200rpx;
+}
+
+.colCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modeCon{display: flex; margin-top: 1250rpx ;}
+.mode .box{width: 150rpx; height: 150rpx; text-align: center;margin: 40rpx 50rpx;}
+.mode .box .pic{width: 150rpx; height: 150rpx;}
+
+.page__bd{
+  margin-top: -140rpx;
+  margin-left: 300rpx;
+  text-align: center;
+}
+
+.Game {
+
+  width: 100%; 
+  height: 490rpx;                  
+  margin: 500rpx 0rpx 0rpx;
+  position: relative;
+}
+.Game .box1{width: 150rpx; height: 150rpx; position: absolute; top: 40rpx; left: 300rpx;}
+.Game .box1 .pic{width: 150rpx; height: 150rpx;}
+
+.Game .box2{width: 150rpx; height: 150rpx; position: absolute; bottom: 40rpx;  left: 300rpx;}
+.Game .box2 .pic{width: 150rpx; height: 150rpx;}
+
+.Game .box3{width: 150rpx; height: 150rpx;position: absolute; top: 170rpx; left: 170rpx;}
+.Game .box3 .pic{width: 150rpx; height: 150rpx;}
+
+.Game .box4{width: 150rpx; height: 150rpx;position: absolute; top: 170rpx; right: 170rpx;}
+.Game .box4 .pic{width: 150rpx; height: 150rpx;}
+
+.Tue {
+  width: 100%; 
+  height: 490rpx;                  
+  margin: 500rpx 0rpx 0rpx;
+  position: relative;
+}
+.Tue .pic{width:750rpx;height:490rpx; position: absolute;}
+
+.colorSet{
+  display: flex;
+  width: 750rpx;
+  height:150rpx;
+  margin-top:-920rpx;
+}
+.colorSet .box{width: 200rpx; height: 150rpx; text-align: center;margin: 0 25rpx; border-radius:35rpx}
+.colorSet .box .pic{width: 200rpx; height: 150rpx;border-radius:35rpx}
+
+.tubeCon{display: flex; margin-top: 20rpx ;}
+.tube .box{
+  width: 125rpx; 
+  height: 125rpx; 
+  margin: 40rpx 0rpx 0rpx 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tube .box .pic{width: 60rpx; height: 125rpx; z-index: -1;
+  position: absolute;}
+.tube .box .txt{
+  z-index: 100;
+  position: absolute;
+}

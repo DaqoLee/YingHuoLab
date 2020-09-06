@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "color-picker":"/miniprogramRoot/miniprogram_npm/mini-color-picker/color-picker" 
+    
+  }
+}

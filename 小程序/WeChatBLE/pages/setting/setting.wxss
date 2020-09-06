@@ -1,0 +1,21 @@
+/* pages/setting/setting.wxss */
+page{
+  background-color: #F3F2F8;
+}
+.line{
+  background-color: #dadadb;
+  height: 1rpx;
+  width: 100%;
+}
+.cell{
+  height: 96rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between; 
+  
+}.cell_name{
+  color: #080808;
+  font-size: 34rpx;
+}

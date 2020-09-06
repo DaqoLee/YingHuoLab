@@ -1,0 +1,386 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200811.235250.25640.0.001.json",
+    "dumpEventTime": "2020-08-11T23:52:50Z",
+    "dumpEventTimeStamp": "1597161170401",
+    "processId": 25640,
+    "cwd": "d:\\项目\\YingHuo\\Code\\ble_connector",
+    "commandLine": [
+      "D:\\小程序\\微信web开发者工具\\node.exe",
+      "d:\\小程序\\微信web开发者工具\\code\\package.nw\\js\\libs\\vseditor\\extensions\\wxml-language-features\\server\\dist\\htmlServerMain",
+      "--node-ipc",
+      "--clientProcessId=20676"
+    ],
+    "nodejsVersion": "v12.6.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.6.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.6.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home China",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9542046,
+        "nice": 0,
+        "sys": 10040250,
+        "idle": 100017078,
+        "irq": 1415890
+      }
+    ],
+    "host": "DESKTOP-55HNIVS"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff748ed6db9",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff748eda72c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff748ed96d8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff748fc300b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7497a8a1e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff749790d6a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff74962256c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff74962a49f",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff749620733",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff74961efc4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff749645757",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff749508624",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7495057f2",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7493f233a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff74985170d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff749897598",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000003289cb237b7",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 33447936,
+    "totalCommittedMemory": 33447936,
+    "usedMemory": 32172024,
+    "availableMemory": 2166376384,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047328,
+        "used": 1047312,
+        "available": 16
+      },
+      "old_space": {
+        "memorySize": 10891264,
+        "committedMemory": 10891264,
+        "capacity": 10707808,
+        "used": 10423784,
+        "available": 284024
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 354368,
+        "used": 351296,
+        "available": 3072
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 1050712,
+        "used": 606000,
+        "available": 444712
+      },
+      "large_object_space": {
+        "memorySize": 19718144,
+        "committedMemory": 19718144,
+        "capacity": 19708216,
+        "used": 19708216,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1.718,
+    "kernelCpuSeconds": 0.39,
+    "cpuConsumptionPercent": 0.0366354,
+    "maxRss": 69017600,
+    "pageFaults": {
+      "IORequired": 53535,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1729,
+      "writes": 638
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ACTEL_FOR_ALTIUM_OVERRIDE": " ",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ALTERA_FOR_ALTIUM_OVERRIDE": " ",
+    "AMD_ENTRYPOINT": "D:\\小程序\\微信web开发者工具\\code\\package.nw\\js\\libs\\vseditor\\bundled\\ext.bundled",
+    "APPDATA": "C:\\Users\\Daqo Lee\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "BT_PANEL": "D:\\BtSoft\\panel",
+    "BT_PYTHON": "C:\\Program Files\\python",
+    "BT_SETUP": "D:\\BtSoft",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_23176_PXRBQJALIKJMJLKC",
+    "CHROME_RESTART": "NW.js|哎呀！NW.js 崩溃了。要立即重新启动吗？|LEFT_TO_RIGHT",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-55HNIVS",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_NO_ASAR": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "HOME": "C:\\Users\\Daqo Lee",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Daqo Lee",
+    "LOCALAPPDATA": "C:\\Users\\Daqo Lee\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-55HNIVS",
+    "MOZ_PLUGIN_PATH": "D:\\Program Files (x86)\\HUPlayer\\",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Daqo Lee\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;D:\\APP\\Microsoft VS Code\\LLVM\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\LLVM\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\openocd\\0.6.0\\bin;C:\\Program Files\\python;C:\\Program Files\\python\\Scripts;;D:\\BtSoft\\panel\\script;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Users\\Daqo Lee\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Daqo Lee\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Daqo Lee\\AppData\\Local\\Microsoft\\WindowsApps;D:\\APP\\Microsoft VS Code\\bin;D:\\APP\\Microsoft VS Code\\LLVM\\bin;;D:\\APP\\VScode\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\openocd\\0.6.0\\bin;C:\\Users\\Daqo Lee\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SW_SIM_HYDRA": "C:\\Program Files\\Common Files\\SolidWorks Shared\\Simulation Worker Agent\\",
+    "SW_SIM_MPIT": "INTELMPI",
+    "SW_SIM_TEMP": "C:\\ProgramData\\SOLIDWORKS\\SW_net_sim_temp\\",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\DAQOLE~1\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\DAQOLE~1\\AppData\\Local\\Temp",
+    "UNRAR_LIB_PATH": "C:\\Program Files\\python\\Lib\\site-packages\\unrar\\UnRAR.dll",
+    "USERDOMAIN": "DESKTOP-55HNIVS",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-55HNIVS",
+    "USERNAME": "Daqo Lee",
+    "USERPROFILE": "C:\\Users\\Daqo Lee",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-685f427b-2211-4cc1-abcf-f302cfc78552-sock",
+    "VSCODE_LOGS": "C:\\Users\\Daqo Lee\\AppData\\Local\\微信开发者工具\\User Data\\744d42667dce0f220d92c3110af3f0f8\\Default\\Editor\\editor_logs\\20200811T221450",
+    "VSCODE_LOG_STACK": "true",
+    "VSEDITORCONFIG": "{\"appRootPath\":\"D:\\\\小程序\\\\微信web开发者工具\\\\code\\\\package.nw\",\"editorRootPath\":\"D:\\\\小程序\\\\微信web开发者工具\\\\code\\\\package.nw\\\\js\\\\libs\\\\vseditor\",\"appActualRoot\":\"D:\\\\小程序\\\\微信web开发者工具\\\\code\\\\package.nw\",\"isStandaloneEditorApp\":false,\"language\":\"zh-CN\",\"projectPath\":\"D:\\\\项目\\\\YingHuo\\\\Code\\\\ble_connector\",\"editorRootRelativeToBundleJSPath\":\"..\",\"isDev\":false,\"styleSheetRelativeHref\":\"../js/libs/vseditor/static/style.css\",\"bundledStyleSheetRelativeHref\":\"../js/libs/vseditor/static/style.bundled.css\",\"useBundledCss\":true,\"isSimplifiedEditorApp\":false,\"proxyPort\":22763,\"httpServerPathPrefix\":\"__vseditorapp__/eJS8VJgAVzt9\",\"webviewResourceBaseRoot\":\"D:\\\\小程序\\\\微信web开发者工具\\\\code\\\\package.nw\\\\js\\\\libs\\\\vseditor\\\\webview-resource\",\"resolvedPathConfigs\":{\"onigWasm\":\"D:\\\\小程序\\\\微信web开发者工具\\\\code\\\\package.nw\\\\node_modules\\\\vscode-oniguruma\\\\release\\\\onig.wasm\"},\"launchOptions\":{\"installExternalFonts\":false,\"installDevtoolsInspectorPanel\":true},\"extensionHostInspectBrk\":false}",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "D:\\小程序\\微信web开发者工具\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll"
+  ]
+}

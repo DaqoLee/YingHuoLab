@@ -1,0 +1,48 @@
+/* pages/choose_service/choose_service.wxss */
+page{
+  background-color: #F3F2F8;
+}
+.column_wrapper{
+  width: 100%;
+  flex-shrink: 1;
+} 
+.v_line{
+  width: 4rpx;
+  height: 100vh;
+  background-color: #dadadb;
+}
+.text_title{
+  display: flex;
+  /* align-self: center; */
+  margin-left: 20rpx;
+  margin-right: 22rpx;
+  color: #8f8e94;
+  font-size: 22rpx;
+}
+.text{
+  font-size: 22rpx;
+}
+.line{
+  background-color: #dadadb;
+  height: 1rpx;
+  width: 100%;
+}
+.cell{
+  height: 64rpx;
+  /* padding-right: 20rpx;
+  padding-left: 20rpx; */
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between; 
+  display: flex;
+}
+.hover_click{
+  background-color: #E5E5EA;
+}
+.error_tip{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}

@@ -1,0 +1,185 @@
+<!--pages/send/send.wxml-->
+
+<!--wxml
+<view class="flex_column">
+	<text class="received_text">received:</text>
+	<view class="flex_row received_menu">
+		<checkbox-group bindchange="receivedMenuChange">
+			<label class="checkbox" style="margin-right:44rpx">
+				<checkbox value="isHexShow" checked="{{isHexShow}}" />HEX显示
+			</label>
+			<label class="checkbox">
+				<checkbox value="lineBreak" checked="{{lineBreak}}" />自动换行
+			</label>
+		</checkbox-group>
+		<view bindtap="clearReceived" class="clear" wx:if='{{receivedData && receivedData.length > 0}}'>清除内容</view>
+	</view>
+	<scroll-view scroll-y class="scroll" scroll-into-view="ffff">
+		<text class="receive">{{receivedData}}</text>
+	</scroll-view>
+
+
+	<text class="received_text">send:</text>
+	<view class="flex_row received_menu">
+		<checkbox-group bindchange="sendMenuChange">
+			<label class="checkbox" style="margin-right:44rpx">
+				<checkbox value="isHexShow" checked="{{sendHex}}" />HEX发送
+			</label>
+			<label class="checkbox">
+				<checkbox value="lineBreak" checked="{{sendLineBreak}}" />发送换行
+			</label>
+		</checkbox-group>
+	</view>
+	<view class="flex_row send_area">
+		<textarea value="{{sendMsg}}" class="text_input" bindinput='sendInput'/>
+		<button type="primary" size="mini" bindtap="send" disabled="{{disabled}}" style="display: flex;justify-content: center;align-items: center;margin-left: 8rpx;margin-right: 0rpx;width: 160rpx;border-radius:1rpx;">按钮</button>
+	</view>
+
+
+
+	</view>
+-->
+
+<text class="received_text">  </text>
+<view class="flex_row received_menu">
+	<checkbox-group bindchange="sendMenuChange">
+		<label class="checkbox" style="margin-right:44rpx">
+			<checkbox value="isHexShow" checked="{{sendHex}}" />HEX发送
+		</label>
+		<label class="checkbox">
+			<checkbox value="lineBreak" checked="{{sendLineBreak}}" />发送换行
+		</label>
+	</checkbox-group>
+</view>
+
+<view class="flex_row send_area">
+	<textarea value="{{sendMsg}}" class="text_input" bindinput='sendInput'/>
+	<button type="primary" bindtap="send"  disabled="{{disabled}}" style="display: flex;justify-content: center;align-items: center;margin-left: 8rpx;margin-right: 0rpx;width: 120rpx;height: 200rpx;border-radius:1rpx;">发送</button>
+</view>
+
+	<view class="mode" >
+		<view class="modeCon" bindtap="send">		
+			<navigator class="box" data-value="{{false}}" bindtap="toDir"  >
+				<image class="pic" data-value='5A005A' bindtap="sendTest" src="/images/Bili.png" mode="widthFix"/>
+			</navigator>
+			<navigator class="box"  data-value="{{false}}" bindtap="toDir" url="">
+				<image class="pic" data-value='5A015A'  bindtap="sendTest" src="/images/clock.png" mode="widthFix"/>
+			</navigator>
+			<navigator class="box" data-value="{{true}}" bindtap="toDir" url="" >
+				<image class="pic" data-value='5A025A'  bindtap="sendTest" src="/images/Snake.png" mode="widthFix"/>	
+			</navigator>
+		</view>
+	</view>
+
+	<view class = "col" >
+		<view class = "colCon" style="background:{{rgbAll}};display: flex; width:120px;height:80px; margin: -1420rpx 25rpx 0rpx;text-align: center;border-radius:20rpx;" bindtap="toPick"  >{{rgbAll}}</view>
+		<color-picker bindchangeColor="pickColor" initColor="{{rgbAll}}" show="{{pick}}" data-value='{{rgbAll}}' bind:touchend="sendColor" />
+	</view>
+
+<view class="page__bd"  >
+		<view class="section section_gap" >
+				<text class="section__title" decode="{{true}}">亮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暗</text>
+				<view class="body-view"  bind:touchend="send"  >
+						<slider bindchanging="sendLumin" max="200" min="10" value="10" activeColor="#e9e9e9" backgroundColor="#1aad19" />
+				</view>
+		</view>
+</view>
+
+<view wx:if="{{isGame}}">
+<view class="Game" bindtap="send" >
+	<navigator class="box1" >
+		<image class="pic" data-value='550155' bindtap="sendTest" src="/images/U.png" mode="widthFix"/>
+	</navigator>
+	<navigator class="box2" url="">
+		<image class="pic" data-value='550355'  bindtap="sendTest" src="/images/D.png" mode="widthFix"/>
+	</navigator>
+	<navigator class="box3" url="">
+		<image class="pic" data-value='550255' bindtap="sendTest" src="/images/L.png" mode="widthFix"/>	
+	</navigator>
+	<navigator class="box4" url="">
+		<image class="pic" data-value='550455' bindtap="sendTest" src="/images/R.png" mode="widthFix"/>	
+	</navigator>
+	</view>
+</view>
+
+<view wx:else>
+	<view class="Tue">
+		<image class="pic"  data-value='{{rgbAll}}' bindtap="sendColor" src="/images/YingHuoTube.gif" mode="widthFix"/>	
+	</view>
+</view>
+
+
+<view class="colorSet"  bindtap="send"> 
+	<navigator class="box"  data-value="{{1}}" bindtap="toPure" > 
+		<image class="pic" data-value='AA0107FF0000AA' bindtap="sendTest" src="/images/PureColor.jpg" />
+	</navigator>	
+	<navigator class="box"  data-value="{{2}}" bindtap="toPure" > 
+		<image class="pic" data-value='AA0207FF0000AA' bindtap="sendTest" src="/images/ChromaticStripe.jpg" />
+	</navigator>	
+	<navigator class="box"  > 
+		<image class="pic" data-value='AA0307FF0000AA' bindtap="sendTest" src="/images/ColorGradient.jpg"/>
+	</navigator>	
+</view>
+
+
+<view wx:if="{{isPure==1}}">
+	<view class="tube" >
+		<view class="tubeCon" bindtap="send">	
+			<navigator class="box"  bindtap="toPick" > 
+				<image class="pic" src="/images/tube.png" mode="widthFix"/>
+				<text class="txt"  data-num="{{0}}" bindtap="setNum" style="font-size: 50rpx; color :{{rgbAll}}">1</text>
+			</navigator>	
+			<navigator class="box"  bindtap="toPick"url=""> 
+				<image class="pic"  src="/images/tube.png" mode="widthFix"/>
+				<text class="txt"  data-num="{{0}}" bindtap="setNum" style="font-size: 50rpx; color :{{rgbAll}}">2</text>
+			</navigator>
+			<navigator class="box"   bindtap="toPick"  url=""> 
+				<image class="pic" src="/images/tube.png"  mode="widthFix"/>	
+				<text class="txt" data-num="{{0}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgbAll}}">3</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick"> 
+				<image class="pic" src="/images/tube.png" mode="widthFix"/>
+				<text class="txt" data-num="{{0}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgbAll}}">4</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick" url=""> 
+				<image class="pic"  src="/images/tube.png"  mode="widthFix"/>
+				<text class="txt" data-num="{{0}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgbAll}}">5</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick" url=""> 
+				<image class="pic"  src="/images/tube.png" mode="widthFix"/>	
+				<text class="txt" data-num="{{0}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgbAll}}">6</text>
+			</navigator>
+		</view>
+	</view>
+</view>
+<view wx:else>
+	<view class="tube" >
+		<view class="tubeCon" bindtap="send">	
+			<navigator class="box"  bindtap="toPick" > 
+				<image class="pic" src="/images/tube.png" mode="widthFix"/>
+				<text class="txt"  data-num="{{1}}" bindtap="setNum" style="font-size: 50rpx; color :{{rgb1}}">1</text>
+			</navigator>	
+			<navigator class="box"  bindtap="toPick"url=""> 
+				<image class="pic"  src="/images/tube.png" mode="widthFix"/>
+				<text class="txt"  data-num="{{2}}" bindtap="setNum" style="font-size: 50rpx; color :{{rgb2}}">2</text>
+			</navigator>
+			<navigator class="box"   bindtap="toPick"  url=""> 
+				<image class="pic" src="/images/tube.png"  mode="widthFix"/>	
+				<text class="txt" data-num="{{3}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgb3}}">3</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick"> 
+				<image class="pic" src="/images/tube.png" mode="widthFix"/>
+				<text class="txt" data-num="{{4}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgb4}}">4</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick" url=""> 
+				<image class="pic"  src="/images/tube.png"  mode="widthFix"/>
+				<text class="txt" data-num="{{5}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgb5}}">5</text>
+			</navigator>
+			<navigator class="box" bindtap="toPick" url=""> 
+				<image class="pic"  src="/images/tube.png" mode="widthFix"/>	
+				<text class="txt" data-num="{{6}}" bindtap="setNum"   style="font-size: 50rpx; color :{{rgb6}}">6</text>
+			</navigator>
+		</view>
+	</view>
+</view>
+

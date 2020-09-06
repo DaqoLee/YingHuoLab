@@ -1,0 +1,58 @@
+/* pages/connect/connect.wxss */
+
+page{
+  background-color: #F3F2F8;
+}
+.line{
+  background-color: #dadadb;
+  height: 1rpx;
+  width: 100%;
+}
+.cell{
+  height: 96rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between; 
+  
+}
+.cell_name{
+  color: #080808;
+  font-size: 34rpx;
+}
+ 
+.title{
+  margin-left: 20rpx;
+  margin-right: 22rpx;
+  color: #8f8e94;
+  font-size: 22rpx;
+}
+.title_wrapper{
+  margin-bottom: 16rpx;
+  margin-top: 32rpx;
+}
+.device{
+  height: 105rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #ffffff;
+  justify-content: center;
+}
+.info{
+  justify-content: space-between;
+}
+.info text{
+  font-size: 24rpx;
+  color: #adabab;
+}
+.tip{
+  font-size: 18rpx;
+  color: red;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.click{
+  background-color: #E5E5EA;
+
+}

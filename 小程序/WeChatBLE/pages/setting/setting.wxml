@@ -1,0 +1,9 @@
+<!--pages/setting/setting.wxml-->
+<view class="flex_column">
+	<view class="line" style="margin-top:32rpx"></view>
+	<view class="flex_row cell">
+		<text class="cell_name">过滤未知设备</text>
+		<switch checked="{{filterNoName}}" bindchange="filterDevice"/>
+	</view>
+	{{Time}}
+</view>

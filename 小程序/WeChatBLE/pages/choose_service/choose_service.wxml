@@ -1,0 +1,77 @@
+<!--pages/choose_service/choose_service.wxml-->
+
+<wxs module="m1">
+	var getName = function(name) {
+
+		var index = name.indexOf('-')
+
+		var lastIndex = name.lastIndexOf('-')
+		if (index == -1 || lastIndex == -1) {
+			return name
+		}
+		return name.substring(0, index + 1) + '****' + name.substring(lastIndex, name.length)
+	}
+
+	var getAuth = function(item) {
+		var name = item.uuid
+
+		var properties = item.properties
+
+		var str = ''
+
+		if (properties.read) {
+			str += 'R'
+		}
+		if (properties.write) {
+			str += 'W'
+		}
+		if (properties.indicate) {
+			str += 'I'
+		}
+		if (properties.notify) {
+			str += 'N'
+		}
+
+
+		var index = name.indexOf('-')
+
+		var lastIndex = name.lastIndexOf('-')
+		if (index == -1 || lastIndex == -1) {
+			return name
+		}
+		return name.substring(0, index + 1) + '(' + str + ')' + name.substring(lastIndex, name.length)
+	}
+	module.exports.getName = getName;
+	module.exports.getAuth = getAuth;
+</wxs>
+<view class="flex_row">
+	<view class="flex_column column_wrapper">
+		<text class="text_title">serviceUUID</text>
+		<view class="line"></view>
+
+		<block wx:if='{{serviceUUIDs}}'>
+			<block wx:for='{{serviceUUIDs}}' wx:key='item'>
+				<view class="cell text {{index == leftPosition?'hover_click':''}}" bindtap="leftClick" data-index="{{index}}">{{m1.getName(item.uuid)}}</view>
+				<view class="line"></view>
+			</block>
+		</block>
+		<block wx:else>
+			<text class="error_tip" bindtap="reload">暂无数据~点击重试</text>
+		</block>
+	</view>
+	<view class="v_line"></view>
+	<view class="flex_column column_wrapper">
+		<text class="text_title">characteristicIdsUUID(RWIN)</text>
+
+		<view class="line"></view>
+		<block wx:if='{{characteristicUUIDs}}'>
+			<block wx:for='{{characteristicUUIDs}}' wx:key='item'>
+				<view hover-class="hover_click" class="cell text" bindtap="send" data-index="{{index}}">{{m1.getAuth(item)}}</view>
+				<view class="line"></view>
+			</block>
+		</block>
+		<block wx:else>
+			<text class="error_tip">暂无数据</text>
+		</block>
+	</view>
+</view>
