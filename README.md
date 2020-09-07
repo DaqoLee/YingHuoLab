@@ -1,5 +1,5 @@
 # 粉丝数显示器
-
+## 简单说明
 
 ![粉丝数显示器](https://github.com/DaqoLee/YingHuoLab/blob/master/Image/YingHuo2.22.png?raw=true)
 
@@ -31,7 +31,7 @@
 这种看上去比较好看，并且是磁吸式的，后期更换比较方便。
 
 
-## 代码
+## 代码部分
 ### ESP32
 #### B站数据和天气的数据
 B站数据和天气的数据(这里用的是[心知天气](https://www.seniverse.com/))，GET回来JSON数据然后解析。
@@ -55,6 +55,6 @@ B站数据和天气的数据(这里用的是[心知天气](https://www.seniverse.com/))，GET回来JS
 小程序是在[串口助手](https://blog.csdn.net/INTKILOW/article/details/106012736)的基础上修改的。更具自己的需求添加图标设置指令就行了。
 
 ## 致谢
-参考的连接已经在文章中了，由衷感谢开源的的前辈们。
+参考的链接已经在文章中了，在此由衷感谢开源的的前辈们。
 
 
